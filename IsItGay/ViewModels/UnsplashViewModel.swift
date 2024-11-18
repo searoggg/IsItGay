@@ -13,7 +13,7 @@ class UnsplashViewModel: ObservableObject {
     @Published var coolPhotos: [UnsplashPhoto] = []
     @Published var notCoolPhotos: [UnsplashPhoto] = []
     
-    private let apiKey = "uBXNQ9VALofe6aapUoKeJkkE6pwWao0mRVbpoK8pl2E"
+    private let apiKey = "${{ secrets.APIKeySecret }}"
     private let baseURL = "https://api.unsplash.com/photos/random"
     
     func fetchRandomPhotos(count: Int) {
